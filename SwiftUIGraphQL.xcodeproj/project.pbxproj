@@ -14,6 +14,7 @@
 		2E8541CF2A0A0A210019158F /* SwiftUIGraphQLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8541CE2A0A0A210019158F /* SwiftUIGraphQLTests.swift */; };
 		2E8541D92A0A0A210019158F /* SwiftUIGraphQLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8541D82A0A0A210019158F /* SwiftUIGraphQLUITests.swift */; };
 		2E8541DB2A0A0A210019158F /* SwiftUIGraphQLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8541DA2A0A0A210019158F /* SwiftUIGraphQLUITestsLaunchTests.swift */; };
+		2E8541E92A0A0D220019158F /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 2E8541E82A0A0D220019158F /* Apollo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		2E8541D42A0A0A210019158F /* SwiftUIGraphQLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIGraphQLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8541D82A0A0A210019158F /* SwiftUIGraphQLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGraphQLUITests.swift; sourceTree = "<group>"; };
 		2E8541DA2A0A0A210019158F /* SwiftUIGraphQLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGraphQLUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2E8541EA2A0A0DBC0019158F /* iOS GraphQL 사용하기.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOS GraphQL 사용하기.pages"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8541E92A0A0D220019158F /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +97,7 @@
 		2E8541BC2A0A0A200019158F /* SwiftUIGraphQL */ = {
 			isa = PBXGroup;
 			children = (
+				2E8541EA2A0A0DBC0019158F /* iOS GraphQL 사용하기.pages */,
 				2E8541BD2A0A0A200019158F /* SwiftUIGraphQLApp.swift */,
 				2E8541BF2A0A0A200019158F /* ContentView.swift */,
 				2E8541C12A0A0A200019158F /* Assets.xcassets */,
@@ -143,6 +147,9 @@
 			dependencies = (
 			);
 			name = SwiftUIGraphQL;
+			packageProductDependencies = (
+				2E8541E82A0A0D220019158F /* Apollo */,
+			);
 			productName = SwiftUIGraphQL;
 			productReference = 2E8541BA2A0A0A200019158F /* SwiftUIGraphQL.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 2E8541B12A0A0A200019158F;
+			packageReferences = (
+				2E8541E72A0A0D220019158F /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 2E8541BB2A0A0A200019158F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -425,6 +435,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +465,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -583,6 +595,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2E8541E72A0A0D220019158F /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2E8541E82A0A0D220019158F /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E8541E72A0A0D220019158F /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2E8541B22A0A0A200019158F /* Project object */;
 }

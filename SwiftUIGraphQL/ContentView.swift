@@ -15,19 +15,19 @@ struct ContentView: View {
         ZStack(alignment: .top) {
             ScrollView {
                 VStack {
-                    Text("All Courses")
+                    Text("Books")
+                        .font(.title)
+                        .bold()
+                        .padding(.horizontal, 20)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    BookList(books: bookViewModel.books)
+                    Text("Courses")
                         .font(.title)
                         .bold()
                         .padding(.horizontal, 20)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.top, 40)
                     CourseList(courses: courseViewModel.courses)
-                    Text("\(bookViewModel.books.count)")
-                    
-                    ForEach(bookViewModel.books, id: \.id) { book in
-                        Text("\(book.title)")
-                            .font(.headline)
-                    }
                     
                 }
                 .padding()

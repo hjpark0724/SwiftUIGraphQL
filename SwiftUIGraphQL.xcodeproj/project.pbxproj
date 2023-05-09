@@ -32,6 +32,9 @@
 		2E4ACF0E2A0A41C000CDF322 /* SchemaMetadata.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4ACEFB2A0A41C000CDF322 /* SchemaMetadata.graphql.swift */; };
 		2E4ACF0F2A0A41C000CDF322 /* Entry.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4ACEFD2A0A41C000CDF322 /* Entry.graphql.swift */; };
 		2E4ACF102A0A41C000CDF322 /* GraphQL.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4ACEFE2A0A41C000CDF322 /* GraphQL.graphql.swift */; };
+		2E4ACF122A0A4CF000CDF322 /* Book.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E4ACF112A0A4CF000CDF322 /* Book.json */; };
+		2E4ACF142A0A4DA500CDF322 /* BookCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4ACF132A0A4DA500CDF322 /* BookCard.swift */; };
+		2E4ACF162A0A51F200CDF322 /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4ACF152A0A51F200CDF322 /* BookList.swift */; };
 		2E8541BE2A0A0A200019158F /* SwiftUIGraphQLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8541BD2A0A0A200019158F /* SwiftUIGraphQLApp.swift */; };
 		2E8541C02A0A0A200019158F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8541BF2A0A0A200019158F /* ContentView.swift */; };
 		2E8541C22A0A0A200019158F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8541C12A0A0A200019158F /* Assets.xcassets */; };
@@ -95,6 +98,9 @@
 		2E4ACEFB2A0A41C000CDF322 /* SchemaMetadata.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaMetadata.graphql.swift; sourceTree = "<group>"; };
 		2E4ACEFD2A0A41C000CDF322 /* Entry.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.graphql.swift; sourceTree = "<group>"; };
 		2E4ACEFE2A0A41C000CDF322 /* GraphQL.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphQL.graphql.swift; sourceTree = "<group>"; };
+		2E4ACF112A0A4CF000CDF322 /* Book.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Book.json; sourceTree = "<group>"; };
+		2E4ACF132A0A4DA500CDF322 /* BookCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCard.swift; sourceTree = "<group>"; };
+		2E4ACF152A0A51F200CDF322 /* BookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
 		2E8541BA2A0A0A200019158F /* SwiftUIGraphQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIGraphQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8541BD2A0A0A200019158F /* SwiftUIGraphQLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGraphQLApp.swift; sourceTree = "<group>"; };
 		2E8541BF2A0A0A200019158F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -264,6 +270,7 @@
 				2E8542262A0A1E9E0019158F /* Course.json */,
 				2E01C5B12A0A25C10023261A /* PreviewData.swift */,
 				2E4ACEDA2A0A2ED900CDF322 /* key.json */,
+				2E4ACF112A0A4CF000CDF322 /* Book.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -327,6 +334,8 @@
 			children = (
 				2E8542242A0A1DE70019158F /* CourseCard.swift */,
 				2E01C5AF2A0A24F40023261A /* CourseList.swift */,
+				2E4ACF132A0A4DA500CDF322 /* BookCard.swift */,
+				2E4ACF152A0A51F200CDF322 /* BookList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -450,6 +459,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E4ACF122A0A4CF000CDF322 /* Book.json in Resources */,
 				2E8541F02A0A13F90019158F /* SectionQuery.graphql in Resources */,
 				2E8541C52A0A0A210019158F /* Preview Assets.xcassets in Resources */,
 				2E8542272A0A1E9E0019158F /* Course.json in Resources */,
@@ -494,8 +504,10 @@
 				2E4ACF052A0A41C000CDF322 /* BookCollection.graphql.swift in Sources */,
 				2E01C5B02A0A24F40023261A /* CourseList.swift in Sources */,
 				2E8541BE2A0A0A200019158F /* SwiftUIGraphQLApp.swift in Sources */,
+				2E4ACF162A0A51F200CDF322 /* BookList.swift in Sources */,
 				2E4ACF092A0A41C000CDF322 /* Section.graphql.swift in Sources */,
 				2E01C5AC2A0A23920023261A /* Color+Extension.swift in Sources */,
+				2E4ACF142A0A4DA500CDF322 /* BookCard.swift in Sources */,
 				2E85421A2A0A15D20019158F /* GraphQLClient.swift in Sources */,
 				2E4ACF0B2A0A41C000CDF322 /* Asset.graphql.swift in Sources */,
 				2E85422A2A0A1FE70019158F /* JsonLoader.swift in Sources */,

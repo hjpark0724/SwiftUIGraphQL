@@ -17,7 +17,7 @@ class BookViewModel: ObservableObject {
             }
             DispatchQueue.main.async {
                 self.books = bookCollection.courses.map { Book($0) }
-                self.books.forEach { print($0.title)}
+                self.books.forEach { print($0.cover)}
             }
         } catch {
             print("error: ", error)

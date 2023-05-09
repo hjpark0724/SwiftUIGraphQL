@@ -10,3 +10,5 @@ import Foundation
 
 var coursePreviewData: Course = load("Course.json")
 var courseListPreviewData = Array(repeating: coursePreviewData, count: 5)
+
+var bookPreviewData: Book = load("Book.json")

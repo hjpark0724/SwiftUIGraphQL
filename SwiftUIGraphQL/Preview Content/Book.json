@@ -1,0 +1,8 @@
+{
+    "publishedAt": "2021-06-16T18:53:45.596Z",
+    "id": "3WzcPYRYAfb2pa8Yc4pgMv",
+    "title": "장하준의 경제학 레시피",
+    "subtitle": "Build a multi-platform app.",
+    "cover" : "https://images.ctfassets.net/renyin2nv6qi/6EtDhEuUXdVivL9k5XKPPF/9ddca36ad29c64da08982f875b70e4a7/_______________________________2023-05-09______________5.19.12.png",
+    "introduce" : "Build a multi-platform app from scratch using the new techniques in iOS 14. We'll use the Sidebar and Lazy Grids to make the layout adaptive for iOS, iPadOS, macOS Big Sur and we'll learn the new Matched Geometry Effect to create beautiful transitions."
+}

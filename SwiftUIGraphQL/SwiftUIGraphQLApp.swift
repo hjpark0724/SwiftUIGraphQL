@@ -12,6 +12,7 @@ struct SwiftUIGraphQLApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(CourseViewModel())
         }
     }
 }

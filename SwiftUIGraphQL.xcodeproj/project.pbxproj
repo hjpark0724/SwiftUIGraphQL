@@ -77,6 +77,7 @@
 		2E8541B12A0A0A200019158F = {
 			isa = PBXGroup;
 			children = (
+				2E8541EA2A0A0DBC0019158F /* iOS GraphQL 사용하기.pages */,
 				2E8541BC2A0A0A200019158F /* SwiftUIGraphQL */,
 				2E8541CD2A0A0A210019158F /* SwiftUIGraphQLTests */,
 				2E8541D72A0A0A210019158F /* SwiftUIGraphQLUITests */,
@@ -97,7 +98,6 @@
 		2E8541BC2A0A0A200019158F /* SwiftUIGraphQL */ = {
 			isa = PBXGroup;
 			children = (
-				2E8541EA2A0A0DBC0019158F /* iOS GraphQL 사용하기.pages */,
 				2E8541BD2A0A0A200019158F /* SwiftUIGraphQLApp.swift */,
 				2E8541BF2A0A0A200019158F /* ContentView.swift */,
 				2E8541C12A0A0A200019158F /* Assets.xcassets */,

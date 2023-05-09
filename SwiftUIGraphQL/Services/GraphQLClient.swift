@@ -10,7 +10,18 @@ import Apollo
 
 class GraphQLClient {
     static let shared = GraphQLClient()
-    let spaceId = "renyin2nv6qi"
-    let accessToken = "j0AWnyuwcV6s_CqqSjIyoMIL_F1VKDAMZq4AHhKxm1Q"
+    let spaceId: String
+    let accessToken: String
+    init() {
+        let keys: Keys = load("key.json")
+        self.spaceId = keys.spaceId
+        self.accessToken = keys.accessToken
+    }
     private(set) lazy var apollo = ApolloClient(url: URL(string: "https://graphql.contentful.com/content/v1/spaces/\(spaceId)?access_token=\(accessToken)")!)
+}
+
+
+struct Keys : Decodable {
+    let spaceId: String
+    let accessToken: String
 }

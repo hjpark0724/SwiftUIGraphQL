@@ -10,6 +10,7 @@
 		2E01C5AC2A0A23920023261A /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01C5AB2A0A23920023261A /* Color+Extension.swift */; };
 		2E01C5B02A0A24F40023261A /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01C5AF2A0A24F40023261A /* CourseList.swift */; };
 		2E01C5B22A0A25C10023261A /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01C5B12A0A25C10023261A /* PreviewData.swift */; };
+		2E4ACEDB2A0A2ED900CDF322 /* key.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E4ACEDA2A0A2ED900CDF322 /* key.json */; };
 		2E8541BE2A0A0A200019158F /* SwiftUIGraphQLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8541BD2A0A0A200019158F /* SwiftUIGraphQLApp.swift */; };
 		2E8541C02A0A0A200019158F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8541BF2A0A0A200019158F /* ContentView.swift */; };
 		2E8541C22A0A0A200019158F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8541C12A0A0A200019158F /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 		2E01C5AB2A0A23920023261A /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		2E01C5AF2A0A24F40023261A /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 		2E01C5B12A0A25C10023261A /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		2E4ACEDA2A0A2ED900CDF322 /* key.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = key.json; sourceTree = "<group>"; };
 		2E8541BA2A0A0A200019158F /* SwiftUIGraphQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIGraphQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8541BD2A0A0A200019158F /* SwiftUIGraphQLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGraphQLApp.swift; sourceTree = "<group>"; };
 		2E8541BF2A0A0A200019158F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				2E8541C42A0A0A210019158F /* Preview Assets.xcassets */,
 				2E8542262A0A1E9E0019158F /* Course.json */,
 				2E01C5B12A0A25C10023261A /* PreviewData.swift */,
+				2E4ACEDA2A0A2ED900CDF322 /* key.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				2E8541F22A0A14270019158F /* README.md in Resources */,
 				2E8541C22A0A0A200019158F /* Assets.xcassets in Resources */,
 				2E8541EF2A0A13F90019158F /* CourseQuery.graphql in Resources */,
+				2E4ACEDB2A0A2ED900CDF322 /* key.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@ struct SwiftUIGraphQLApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(CourseViewModel())
+                .environmentObject(BookViewModel())
         }
     }
 }

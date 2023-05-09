@@ -1,0 +1,16 @@
+query Book {
+  bookCollection {
+    courses: items{
+      sys {
+          publishedAt
+        id
+      }
+      title
+      subtitle
+      introduce
+      cover {
+      url
+      }
+    }
+  }
+}

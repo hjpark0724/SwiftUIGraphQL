@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var courseViewModel: CourseViewModel
+    @EnvironmentObject var bookViewModel: BookViewModel
     var courses: [Course] = []
     var body: some View {
         ZStack(alignment: .top) {
@@ -21,17 +22,27 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.top, 40)
                     CourseList(courses: courseViewModel.courses)
+                    Text("\(bookViewModel.books.count)")
+                    
+                    ForEach(bookViewModel.books, id: \.id) { book in
+                        Text("\(book.title)")
+                            .font(.headline)
+                    }
+                    
                 }
                 .padding()
-                .task {
-                    await courseViewModel.fetch()
-                }
+        
             }
             Color(.white)
                 .animation(.easeIn)
                 .ignoresSafeArea()
                 .frame(height:0)
         }
+        .task {
+            await courseViewModel.fetch()
+            await bookViewModel.fetch()
+        }
+        
     }
 }
 
@@ -39,5 +50,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(CourseViewModel())
+            .environmentObject(BookViewModel())
     }
 }
